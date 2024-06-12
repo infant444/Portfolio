@@ -1,0 +1,29 @@
+
+<div class="container">
+<div class="content" id="content">
+<div class="title">
+  Infant.dev
+</div>
+<div class="yz">
+  <ul class="menuy">
+    <li *ngFor="let item of navinfo" class="menux">{{item}}</li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="xyz">
+  <nav id="menu">
+    <mat-icon (click)="menux()" id="icon">{{icon}}</mat-icon>
+    <div class="menu">
+      <ul class="pmenu">
+        <li *ngFor="let item of navinfo">{{item}}</li>
+      </ul>
+      <div class="socialmedia">
+        <!-- <mat-icon >linkedin</mat-icon>
+        <mat-icon >facebook</mat-icon>
+        <mat-icon >github-circle</mat-icon>
+        <mat-icon >whatsapp</mat-icon> -->
+      </div>
+    </div>
+  </nav>
+</div>

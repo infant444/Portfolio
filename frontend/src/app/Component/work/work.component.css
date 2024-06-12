@@ -1,0 +1,99 @@
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+
+.content{
+  height: calc(100% - 100px);
+  background-color: rgba(123, 123, 123, 0.1);
+  margin: 0 3rem;
+  margin-top:20px;
+  border-radius: 2rem;
+  padding: 1rem;
+  display: block;
+  overflow-y: scroll;
+}
+.content::-webkit-scrollbar{
+  width: 5px;
+}
+.content::-webkit-scrollbar-track{
+  background-color: gray;
+}
+.content::-webkit-scrollbar-thumb{
+  background: lightgray;
+  border-radius: 10px;
+}
+.works{
+  padding: .7rem;
+  border-bottom: 1px solid lightblue;
+  overflow: hidden;
+
+}
+.works:nth-last-child(1){
+  border-bottom: none;
+
+}
+.workxyz{
+  display: flex;
+}
+.workinfo{
+  width: calc(100% - 420px);
+}
+.title{
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: aliceblue;
+  margin-bottom: .6rem;
+}
+.usedprogram{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.discription{
+  text-align: justify;
+  padding: .3rem;
+
+}
+.workimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.workimg img{
+  width: 400px;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.program{
+  width: 2rem;
+  margin: .2rem .5rem;
+}
+
+.btns{
+  margin-top: .5rem;
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+}
+
+.git{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-right: .7rem;
+  color: lightgray;
+}
+.live{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-right: .7rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: lightgray;
+}
+.git:hover,
+.live:hover{
+  transition: all 2s linear ease-in-out;
+  text-decoration: underline;
+}

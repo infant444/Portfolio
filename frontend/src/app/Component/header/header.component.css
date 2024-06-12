@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  display: flex;
+  z-index: 6;
+  position: fixed;
+  overflow: hidden;
+  background-color: #000000c2;
+}
+
+.content {
+  display: flex;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 6;
+  color: aliceblue;
+}
+
+.title {
+  color: #f0f8ff;
+  font-family: var(font2);
+  margin: 0.7rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.xyz{
+  overflow: hidden;
+}
+nav {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  padding-top: 0.8rem;
+  padding-left: 0.7rem;
+  background-color: #000;
+  /* border-radius: 20rem; */
+  overflow: hidden;
+  z-index: 7;
+  right: .4rem;
+  top: .3rem;
+
+}
+mat-icon {
+  cursor: pointer;
+  float: right;
+  margin-right: 0.7rem;
+  background-color: #000;
+
+}
+.xyz{
+  display: none;
+}
+.menu{
+height: calc(100% - 2rem);
+overflow: hidden;
+}
+.pmenu{
+  height: calc(100% - 20rem) ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.yz{
+  display: block;
+}
+.pmenu li {
+  color: rgba(128, 128, 128, 0.589);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+li:hover {
+  color: aliceblue;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.589);
+}
+.menuy{
+  display: flex;
+}
+.menux{
+  color: aliceblue;
+  padding: .7rem .8rem;
+  margin: 1rem .5rem;
+  cursor: pointer;
+}
+@media (max-width:660px) {
+  .xyz{
+    display: block;
+  }
+  .yz{
+    display: none;
+  }
+}

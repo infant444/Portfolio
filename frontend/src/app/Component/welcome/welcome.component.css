@@ -1,0 +1,54 @@
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(56, 56, 56);
+  position: absolute;
+  z-index: 20;
+}
+.content::after{
+  content: "Hello";
+  font-size: 3rem;
+  font-family: var(f1);
+  animation: Hello 5s linear forwards ;
+
+}
+@keyframes Hello{
+  0%{
+    content:"Hello"
+  }
+  10%{
+    content:"வணக்கம்"
+  }
+  20%{
+    content:"नमस्ते"
+  }
+  30%{
+    content:"ഹലോ"
+  }
+  40%{
+    content:"Bonjour"
+  }
+  50%{
+    content:"નમસ્તે"
+  }
+  60%{
+    content:"హలో"
+  }
+  70%{
+    content:"Hallo"
+  }
+  80%{
+    content:"ନମସ୍କାର"
+  }
+  90%{
+    content:"ನಮಸ್ಕಾರ"
+  }
+  100%{
+    content:"வணக்கம்"
+  }
+
+}
