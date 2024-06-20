@@ -26,7 +26,7 @@ app.use("/api/work",workrouter);
 app.use("/api/message",messagerouter);
 
 
-app.use(express.static('public'))
+app.use(express.static('public/browser'))
 app.get("*",(req,res)=>{
     res.sendFile(path.join(__dirname,'public','browser','index.html'))
 })
