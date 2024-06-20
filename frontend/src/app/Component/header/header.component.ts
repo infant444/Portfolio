@@ -1,6 +1,7 @@
 import {HostListener, Component, ElementRef, OnInit } from '@angular/core';
 import { Navinfo } from '../../model/basicinfo';
 import { gsap } from 'gsap'
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnInit {
   icon = "menu";
   iconchange = false;
 
-  constructor(private element: ElementRef) { }
+  constructor(private element: ElementRef,private router:Router) { }
   @HostListener('window:scroll', ['$event'])
   scroll(){
     if (window.scrollY > 82.2) {
@@ -84,5 +85,7 @@ export class HeaderComponent implements OnInit {
       ease: "power1.inOut",
     })
   }
+
+
 }
 

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="content">
+    <h1>Add Work</h1>
+    <form class="work" [formGroup]="add_work" (ngSubmit)="submit()"  enctype="multipart/form-data">
+      <div class="iput">
+        <label>Title</label>
+        <input type="text" formControlName="title">
+      </div>
+      <div class="iput">
+        <label>Discription</label>
+        <textarea cols="40" rows="5" formControlName="discription"></textarea>
+      </div>
+      <div class="iput">
+        <label>Images</label>
+        <input type="file" formControlName="images" (change)="onFileSelected($event)" multiple accept="image/*">
+      </div>
+      <div class="iput">
+        <label>Used Program</label>
+        <input type="text" formControlName="usedprogram">
+      </div>
+      <div class="iput">
+        <label>Github link</label>
+        <input type="text" formControlName="githubId">
+      </div>
+      <div class="iput">
+        <label>Demo Link</label>
+        <input type="text" formControlName="demo_link">
+      </div>
+      <div class="iput">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <app-skill-types></app-skill-types>
+</div>

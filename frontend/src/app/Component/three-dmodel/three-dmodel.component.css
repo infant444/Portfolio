@@ -1,0 +1,8 @@
+div{
+  width: 640px;
+  height: 480px;
+  overflow: hidden;
+}
+iframe{
+  transform: scale(1.37);
+}

@@ -4,7 +4,17 @@ export class Social{
 }
 
 
-export const Navinfo:string[]=["About","MyWork","Get in Touch"]
+export const Navinfo:Social[]=[
+  {
+    link:"About",
+    src:"About"
+  },{
+    link:"MyWork",
+    src:"MyWork"
+  },{
+    link:"GetinTouch",
+    src:"Get in Touch"
+  },]
 
 export const socialmedia:Social[]=[
   {

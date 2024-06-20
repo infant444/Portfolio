@@ -1,0 +1,30 @@
+<div class="container" id="GetinTouch">
+  <app-title title="Get In Touch"></app-title>
+
+  <div class="content">
+    <div class="message">
+      <form [formGroup]="message" (ngSubmit)="submit()">
+        <div class="xyz">
+          <label for="">Name</label>
+          <input type="text" formControlName="name" [ngClass]="issubmited && Fc.name.invalid?'error':''">
+        </div>
+        <div class="xyz">
+          <label for="">Eamil</label>
+          <input type="text" formControlName="email" [ngClass]="issubmited && Fc.name.invalid?'error':''">
+        </div>
+        <div class="xyz">
+          <label for="">Message</label>
+          <textarea type="text" formControlName="messagex" [ngClass]="issubmited && Fc.name.invalid?'error':''" rows="5"
+            cols="30"></textarea>
+        </div>
+        <div class="xyz">
+          <button type="submit">Enquiry</button>
+        </div>
+      </form>
+    </div>
+    <div class="x">
+
+<app-three-dmodel></app-three-dmodel>
+    </div>
+  </div>
+</div>

@@ -5,13 +5,13 @@
 <div class="content">
   <div class="col">
     <div class="row">
-      <div class="move">
+      <div class="move" (click)="pm()">
         <mat-icon>keyboard_arrow_left</mat-icon>
       </div>
     </div>
-    <img src="asset/image/works/1.png" alt="">
+    <img src="{{currentImg}}" alt="">
     <div class="row">
-      <div class="move">
+      <div class="move" (click)="nm()">
         <mat-icon>keyboard_arrow_right</mat-icon>
       </div>
     </div>

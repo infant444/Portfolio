@@ -6,5 +6,4 @@ export class Work{
   used_program?:string[];
   github_id!:string;
   demo_link!:string;
-  demo!:boolean;
 }

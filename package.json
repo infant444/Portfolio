@@ -1,15 +1,17 @@
 {
   "dependencies": {
-    "@angular-devkit/core": "^18.0.1"
+    "@angular-devkit/core": "^18.0.1",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1"
   },
   "name": "portfolio",
   "version": "1.0.0",
   "description": "To add my works and info is used to store data in mongodb, and the backend is used as node js and express ",
   "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "scripts": {
+    "start": "cd backend/built && node server.js",
+    "prebuild": "cd backend && npm run build",
+    "build":"cd frontend && npm run build"},
   "author": "Infant Raj S",
   "license": "ISC"
 }

@@ -1,44 +1,36 @@
-<app-imgshow [show]="isShow">
+<app-imgshow [show]="isShow" [id]="id">
 
 </app-imgshow>
-<div class="container">
+<div class="container" id="MyWork">
   <app-title title="My Work"></app-title>
   <div class="content">
-    <div class="works">
+    <div class="works" *ngFor="let x of work">
       <div class="workxyz">
         <div class="workinfo">
 
 
           <div class="title">
-            Protfolio
+            {{x.title}}
           </div>
 
 
           <div class="discription">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, eos? At incidunt totam Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. In, accusamus porro debitis tempora, perferendis sint recusandae placeat
-            unde beatae quas magni molestias fugit dolorum veniam quae, quis laborum iure repudiandae? Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Sed distinctio fugit doloribus, voluptatibus quasi non quo eius neque
-            obcaecati necessitatibus delectus dolorum dicta nesciunt pariatur eligendi est maxime? Cum, quisquam. odio
-            itaque ab cupiditate labore consequuntur nostrum dicta, minus sit dolore facilis deserunt ex quis cum
-            soluta.
+            {{x.discription}}
           </div>
           <div class="usedprogram">
-            <img src="asset/image/skill/1.png" alt="" class="program">
-            <img src="asset/image/skill/1.png" alt="" class="program">
-            <img src="asset/image/skill/1.png" alt="" class="program">
-            <img src="asset/image/skill/1.png" alt="" class="program">
+            <img *ngFor="let y of x.used_program" src="asset/image/skill/{{y}}.svg" class="program">
+
           </div>
 
         </div>
         <div class="workimg">
-          <img (click)="show()" src="asset/image/works/1.png" alt="" srcset="">
+          <img (click)="show(x.id)" src={{x.images}}>
         </div>
 
       </div>
       <div class="btns">
-        <a href="" class="git">github</a>
-        <a href="" class="live">Live Demo</a>
+        <a [href]="x.github_id" class="git" target="_blank">github</a>
+        <a *ngIf="x.demo_link" [href]="x.demo_link" class="live" target="_blank">Live Demo</a>
       </div>
     </div>
 

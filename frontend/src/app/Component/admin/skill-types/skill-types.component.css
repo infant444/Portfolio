@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width:600px;
+}
+.x{
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: .5rem;
+  border: 2px solid lightcoral;
+  padding: .2rem;
+  border-radius: .5rem;
+}
+.x img{
+  width: 100%;
+}
+
+p{
+  color: black;
+  text-align: center;
+}

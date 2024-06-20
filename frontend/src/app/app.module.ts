@@ -13,7 +13,13 @@ import { AboutusComponent } from './Component/aboutus/aboutus.component';
 import { WorkComponent } from './Component/work/work.component';
 import { TitleComponent } from './Component/title/title.component';
 import { ImgshowComponent } from './Component/imgshow/imgshow.component';
-
+import { AddWorkComponent } from './Component/admin/add-work/add-work.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { SkillTypesComponent } from './Component/admin/skill-types/skill-types.component';
+import { GetintouchComponent } from './Component/getintouch/getintouch.component';
+import { ThreeDmodelComponent } from './Component/three-dmodel/three-dmodel.component';
+import { FooterComponent } from './Component/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,15 +31,25 @@ import { ImgshowComponent } from './Component/imgshow/imgshow.component';
     WorkComponent,
     TitleComponent,
     ImgshowComponent,
+    AddWorkComponent,
+    SkillTypesComponent,
+    GetintouchComponent,
+    ThreeDmodelComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
